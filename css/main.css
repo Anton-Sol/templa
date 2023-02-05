@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Spartan:wght@400;700&display=swap');
+body{
+	font-family: 'Inter', sans-serif ;
+	font-weight: 500;
+	font-size: 18px;
+	color: #FFFFFF;
+	background-color: #1D1D1D ;
+}
+a{
+	font-weight: 600;
+	text-decoration: none;
+	color: #FFFFFF;
+
+}
+ul{
+	list-style: none;
+}
+.nav{
+	width: 100%;
+	height: 100%;
+	margin-top: 63px;
+	margin-bottom: 72px;
+}
+.nav__logo{
+	max-width: 15%;
+	flex: 1;
+}
+.nav__link{
+	max-width: 20%;
+	flex: 1;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19.36px;
+	text-align: center;
+	border: solid 2px;
+	border-color: #FFFFFF;
+
+	padding: 14px 35px 14px 35px;
+
+
+}
+.nav__list{
+	max-width: 60%;
+	margin: 0px 100px 0px 100px;
+	flex: 1;
+
+}
+.nav__list_item{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	margin: 0px 15px 0px 15px;
+}
+
+
+/****************************header********************************************************************/
+.header{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 392px;
+}
+.header__block_text{
+	flex: 2;
+	width: 50%;
+	margin: 0px 40px 0px 0px;
+}
+.header__block_img{
+	flex: 1;
+	width: 50%;
+	margin: 0px 0px 0px 40px;
+}
+.header__title{
+	font-size: 66px;
+	font-weight: 500;
+	line-height: 97.37px;
+	margin: 0px 0px 36px 0px ;
+}
+.header__title_ext{
+	font-weight: 700;
+}
+.header__text{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 29.25px;
+	margin: 0px 0px 36px 0px ;
+}
+.header__form{
+	position: relative;
+	width: 438px;
+	height: 74px;
+	z-index: 1;
+}
+.header__form_image{
+	position: absolute;
+	left: 25px;
+	right: 15px;
+	top: 25px;
+	bottom: 26px;
+
+	opacity: 0.1;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+
+.header__email_inp{
+	position: absolute;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	text-align: left;
+	background: #FFFFFF;
+	border-radius: 43px;
+	opacity: 0.1;
+	border: none;
+	width: 100%;
+	height: 100%;
+	padding: 0px 186px 0px 62px;
+	z-index: 2;
+}
+.header__form_button{
+	position: absolute;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	text-align: center;
+	background: #E3B748;
+	border-radius: 43px;
+	border: none;
+	width: 137px;
+	height: 62px;
+	top: 6px;
+	bottom: 6px;
+	left: 290px;
+
+	z-index: 3;
+
+}
+.header__image{
+	max-width: 477;
+	max-height: 544;
+}
+
+/********************************info***********************************************/
+.introduction{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 186px;
+
+}
+.introduction__title{
+	font-size: 54px;
+	font-weight: 600;
+	line-height: 87.22px;
+	flex: 1;
+	width: 50%;
+	height: auto;
+	margin: 0px 171px 0px 0px;
+}
+.introduction__block{
+	border-left:solid 1px ;
+	border-color: #6A6A6A;
+	flex: 1;
+	width: 50%;
+	height: auto;
+	padding: 0px 0px 0px 87px;
+}
+.introduction__text_1{
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 52.01px;
+	color: #FFFFFF;
+	
+}
+
+.introduction__text_2{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 29.25px;
+	opacity: 0.3;
+}
+
+/*******************************************************wcu section*****************************/
+.wcu{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 179px;
+}
+
+.wcu__title{
+	font-size: 54px;
+	font-weight: 600;
+	line-height: 77.23px;
+	flex: 1;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-bottom: 97px;
+}
+.wcu__block{
+		
+
+	width: 30%;
+	min-width: 250px;
+	padding: 28px 43px 36px 23px;
+	margin: 10px 10px 10px 10px;
+	border: 1.4px solid rgba(255, 255, 255, 0.1);
+	border-radius: 14px;
+
+}
+.wcu__block_img{
+	margin-bottom: 28px;
+}
+.wcu__block_title{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 24px;
+	margin-bottom: 26px;
+}
+.wcu__block_text{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 22.75px;
+	opacity: 0.3;
+	margin-bottom: 22px;
+
+}
+.wcu__block_link{
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 22.75px;
+	color: #000000;
+	background: #E3B748;
+	border-radius: 23.5px;
+	padding: 10px 24px 10px 24px;
+
+}
+
+
+/***********************************************practice section*******************************/
+.practice{
+	width: 100%;
+	height: 1228px; 
+	margin-bottom: 186px;
+	}
+.practice__title{
+	font-size: 54px;
+	font-weight: 600;
+	line-height: 77.23px;
+	text-align: center;
+	flex: 1;
+	width: 100%;
+	margin-bottom: 65px;
+}
+.practice__ex{
+	position: relative;
+	width: 100%;
+}
+.practice__ex div:nth-child(1){
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+}
+.practice__ex div:nth-child(2){
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.practice__ex div:nth-child(3){
+	position: absolute;
+ 	top: 372px;
+ 	left: 0px;
+}
+.practice__ex div:nth-child(4){
+	position: absolute;
+	top: 372px;
+ 	right: 0px;
+}
+.practice__ex div:nth-child(5){
+	position: absolute;
+	top: 744px;
+ 	right: 0px;
+}
+.practice__ex div:nth-child(6){
+	position: absolute;
+	top: 744px;
+ 	left: 0px;
+}
+.practice__block_text{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 24px;
+	position: absolute;
+	bottom: 41px;
+	
+}
+.practice__block_image{
+	width: 100%;
+}
+.practice__ex div:nth-child(1) p{
+	left: 26%;
+}
+.practice__ex div:nth-child(2) p{
+	left: 37%;
+
+}
+.practice__ex div:nth-child(3) p{
+	left: 20%;
+
+}
+.practice__ex div:nth-child(4) p{
+	left: 37%;
+}
+.practice__ex div:nth-child(5) p{
+	left: 26%;
+
+}
+.practice__ex div:nth-child(6) p{
+	left: 30.7%;
+
+}
+
+/**********************************************feedback*******************************/
+
+
+.feedback{
+	width: 100%;
+	height: auto;
+	margin-bottom: 186px;
+}
+.feedback__title{
+	font-size: 54px;
+	font-weight: 600;
+	line-height: 77.23px;
+	margin-bottom: 104px;
+}
+.feedback__block{
+	flex: 1;
+	width: 30%;
+	min-width: 300px;
+	padding: 40px 40px 40px 26px;
+	border: 1.4px solid rgba(255, 255, 255, 0.1);
+	border-radius: 14px;
+}
+.feedback__blocks div:nth-child(2){
+	margin: 20px 22px 20px 22px;
+	background-color: #2E2E2E;
+}
+.feedback__block_image{
+	max-width: 105px;
+	max-height: 102px;
+	margin-bottom: 20px;
+}
+.feedback__block_name{
+	 font-size: 24px;
+	 font-weight: 600;
+	 line-height: 24px;
+	 margin-bottom: 10px;
+}
+.feedback__block_position{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	margin-bottom: 22px;
+}
+.feedback__block_text{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 22.75px;
+	opacity: 0.3;
+}
+
+/**************************************team*******************************************/
+.team{
+	width: 100%;
+	height: auto;
+	margin-bottom: 149px;
+}
+.team__title{
+	font-size: 54px;
+	font-weight: 600;
+	line-height: 77.23px;
+	text-align: center;
+	margin-bottom: 109px;
+}
+.team_blocks{}
+
+.team_blocks_1 .team__block:nth-child(2){
+	margin-right:53px;
+	margin-left: 53px;
+	background-color: #E3B748;
+	
+}
+.team_blocks_2 .team__block:nth-child(2){
+	margin-right:53px;
+	margin-left: 53px;
+	
+	
+}
+.team__block{
+	flex: 1;
+	width: 30%;
+	border-radius: 14px;
+	padding: 18px 23px 23px 26px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.team__block_image{
+	flex: 1;
+	max-width: 68px;
+	margin-right: 20px;
+}
+.team__block_text{
+	flex: 1;
+	width: 50%;
+}
+.team__block_name{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 24px;
+	margin-bottom: 6px;
+}
+.team__block_cases{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	opacity: 0.3;
+}
+
+
+/************************************footer*********************************************/
+
+.footer{
+	background-color: #171717;
+	width: 100%;
+	padding: 91px 0px 91px 0px;
+}
+.footer__block{
+	width: 100%;
+	margin-bottom: 100px;
+}
+.footer__logo_link{
+	box-sizing: border-box;
+	width: 16.6%;
+}
+.footer__logo_img{
+	max-width: 145px;
+}
+.footer__nav{
+	width: 66.8%;
+}
+.footer__nav_link{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	flex: 1;
+	width: 20%;
+	text-align: center;
+}
+
+
+.footer__socnetw{
+	width: 16.6%;
+}
+.footer__socnetw_link{
+	flex: 1;
+	width: 20%;
+}
+.footer__socnetw_image{
+	max-width: 30px;
+	height: auto;
+}
+
+.footer__privacy{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 0px 21px 0px 21px;
+}
+.footer__privacy_link{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 0px 21px 0px 21px;
+}
+
+
+@media (max-width:1120px){
+	.wcu__block{
+		width: 100%;
+	}
+}

@@ -1,0 +1,52 @@
+.row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.column{
+	display: flex;
+	flex-direction: column;
+}
+
+.container{
+		margin-left: 150px;
+	margin-right: 150px;
+	width:  80%;
+}	
+
+.jc_center{
+	justify-content: center;
+}
+.jc_space_between{
+	justify-content: space-between;
+}
+.ai_center{
+	align-items: center;
+}
+
+
+col_1{
+	flex: 1;
+	width: 8.3%;
+}
+col_2{
+	flex: 1;
+	width: 16.6%;
+}
+col_3{
+	flex: 1;
+	width: 25%;
+}
+col_4{
+	flex: 1;
+	width: 33.3%;
+}
+col_6{
+	flex: 1;
+	width: 50%;
+}
+col_12{
+	flex: 1;
+	width: 100%;
+}
