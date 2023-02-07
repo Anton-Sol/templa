@@ -22,12 +22,12 @@ ul{
 	margin-bottom: 72px;
 }
 .nav__logo{
-	max-width: 15%;
-	flex: 1;
+	width: 145px;
+	height: 30px;
+	/*max-width: 15%;
+	flex: 1;*/
 }
-.nav__link{
-	max-width: 20%;
-	flex: 1;
+.nav__button{
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 19.36px;
@@ -40,17 +40,23 @@ ul{
 
 }
 .nav__list{
-	max-width: 60%;
-	margin: 0px 100px 0px 100px;
-	flex: 1;
-
+	cursor: default;
+	max-width: auto;
+	height: 47px;
 }
-.nav__list_item{
+.nav__item{
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	margin: 0px 15px 0px 15px;
+}
+.nav__link{
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 26px;
 	text-align: center;
-	margin: 0px 15px 0px 15px;
+	height: 47px;
+	padding: 0 8px;
 }
 
 
@@ -239,87 +245,49 @@ ul{
 /***********************************************practice section*******************************/
 .practice{
 	width: 100%;
-	height: 1228px; 
 	margin-bottom: 186px;
 	}
+.practice__block{
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 10px ;
+}
+
+.practice__block:nth-child(2),.practice__block:nth-child(3),.practice__block:nth-child(6){
+	position: relative;
+	flex: 0 0 33.3%;
+	max-width: 33.3%;
+}
+
+.practice__block:nth-child(1),.practice__block:nth-child(4),.practice__block:nth-child(5){
+	position: relative;
+	flex: 0 0 66.6%;
+	max-width: 66.6%;
+}
+
 .practice__title{
 	font-size: 54px;
 	font-weight: 600;
 	line-height: 77.23px;
 	text-align: center;
-	flex: 1;
 	width: 100%;
 	margin-bottom: 65px;
 }
-.practice__ex{
-	position: relative;
-	width: 100%;
-}
-.practice__ex div:nth-child(1){
-	position: absolute;
-	top: 0px;
-	right: 0px;
 
-}
-.practice__ex div:nth-child(2){
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-.practice__ex div:nth-child(3){
-	position: absolute;
- 	top: 372px;
- 	left: 0px;
-}
-.practice__ex div:nth-child(4){
-	position: absolute;
-	top: 372px;
- 	right: 0px;
-}
-.practice__ex div:nth-child(5){
-	position: absolute;
-	top: 744px;
- 	right: 0px;
-}
-.practice__ex div:nth-child(6){
-	position: absolute;
-	top: 744px;
- 	left: 0px;
-}
-.practice__block_text{
+.practice__text{
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 24px;
-	position: absolute;
+	color: #FFFBF2;
+	position: relative;
+	z-index: 2;
 	bottom: 41px;
+	text-align: center;
 	
 }
-.practice__block_image{
-	width: 100%;
+.practice__image{
+	max-width: 100%;
 }
-.practice__ex div:nth-child(1) p{
-	left: 26%;
-}
-.practice__ex div:nth-child(2) p{
-	left: 37%;
-
-}
-.practice__ex div:nth-child(3) p{
-	left: 20%;
-
-}
-.practice__ex div:nth-child(4) p{
-	left: 37%;
-}
-.practice__ex div:nth-child(5) p{
-	left: 26%;
-
-}
-.practice__ex div:nth-child(6) p{
-	left: 30.7%;
-
-}
-
 /**********************************************feedback*******************************/
 
 
@@ -335,16 +303,19 @@ ul{
 	margin-bottom: 104px;
 }
 .feedback__block{
-	flex: 1;
 	width: 30%;
 	min-width: 300px;
 	padding: 40px 40px 40px 26px;
 	border: 1.4px solid rgba(255, 255, 255, 0.1);
 	border-radius: 14px;
+	margin-right: 22px;
+	margin-bottom: 22px;
 }
 .feedback__blocks div:nth-child(2){
-	margin: 20px 22px 20px 22px;
 	background-color: #2E2E2E;
+}
+.feedback__blocks div:last-child{
+	margin: none;
 }
 .feedback__block_image{
 	max-width: 105px;
@@ -389,6 +360,7 @@ ul{
 	margin-right:53px;
 	margin-left: 53px;
 	background-color: #E3B748;
+	color: #373737;
 	
 }
 .team_blocks_2 .team__block:nth-child(2){
@@ -436,39 +408,26 @@ ul{
 	padding: 91px 0px 91px 0px;
 }
 .footer__block{
-	width: 100%;
 	margin-bottom: 100px;
-}
-.footer__logo_link{
-	box-sizing: border-box;
-	width: 16.6%;
-}
-.footer__logo_img{
-	max-width: 145px;
-}
-.footer__nav{
-	width: 66.8%;
 }
 .footer__nav_link{
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 24px;
-	flex: 1;
-	width: 20%;
 	text-align: center;
 }
-
-
-.footer__socnetw{
-	width: 16.6%;
+.footer__links_list-social{
+	
 }
-.footer__socnetw_link{
-	flex: 1;
-	width: 20%;
+.footer__links_list-social li{
+	margin-right: 23px;
 }
-.footer__socnetw_image{
+.footer__links_list-social li:last-child{
+	margin-right: none;	
+}
+.footer__social_image{
 	max-width: 30px;
-	height: auto;
+	height: 30px;
 }
 
 .footer__privacy{
@@ -485,8 +444,31 @@ ul{
 }
 
 
-@media (max-width:1120px){
-	.wcu__block{
+@media (max-width: 1100px){
+	.feedback__block{
 		width: 100%;
 	}
+}
+@media (max-width: 1000px){
+	.wcu__block_text{
+		white-space: nowrap;
+	    overflow: hidden;
+    	text-overflow: ellipsis;
+	}
+	.practice__block:nth-child(1), .practice__block:nth-child(4), .practice__block:nth-child(5){
+		position: relative;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.practice__block:nth-child(2), .practice__block:nth-child(3), .practice__block:nth-child(6){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.feedback__block_text{
+		white-space: nowrap;
+	    overflow: hidden;
+    	text-overflow: ellipsis;
+
+	}
+
 }
